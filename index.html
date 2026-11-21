@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Bonaventure Danfi — recherche opérationnelle, optimisation, intelligence artificielle et simulation.">
+  <meta name="theme-color" content="#101e36">
+  <title>Bonaventure Danfi — Research & Decision Science</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navigation principale">
+      <a class="brand" href="#home" aria-label="Accueil">BD<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about" data-i18n="nav_about">À propos</a>
+        <a href="#projects" data-i18n="nav_projects">Projets</a>
+        <a href="#research" data-i18n="nav_research">Recherche</a>
+        <a href="#skills" data-i18n="nav_skills">Compétences</a>
+        <a href="#education" data-i18n="nav_education">Formation</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </div>
+      <button class="language-switch" id="languageSwitch" aria-label="Switch language">EN</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-dark" id="home">
+      <div class="hero-grid container">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span><span data-i18n="hero_eyebrow">RECHERCHE OPÉRATIONNELLE · IA · OPTIMISATION</span></p>
+          <h1 data-i18n="hero_title">Comprendre la complexité.<br><span>Construire de meilleures décisions.</span></h1>
+          <p class="hero-lead" data-i18n="hero_lead">Je m'intéresse à la modélisation mathématique, à l'optimisation et à l'intelligence artificielle pour concevoir des outils d'aide à la décision face à des problèmes complexes.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects" data-i18n="hero_cta">Découvrir mes travaux <span>↗</span></a>
+            <a class="button button-ghost" href="#about" data-i18n="hero_about">Mon parcours</a>
+          </div>
+          <div class="hero-tags">
+            <span>Operations Research</span><span>Mathematical Optimization</span><span>Artificial Intelligence</span>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Illustration abstraite de recherche et optimisation">
+          <div class="visual-orbit orbit-one"></div>
+          <div class="visual-orbit orbit-two"></div>
+          <div class="visual-core"><span>OR</span><small>DECISION<br>SCIENCE</small></div>
+          <div class="visual-node node-a">AI</div>
+          <div class="visual-node node-b">OPT</div>
+          <div class="visual-node node-c">SIM</div>
+          <div class="visual-caption">MODELING <i>·</i> OPTIMIZATION <i>·</i> IMPACT</div>
+        </div>
+      </div>
+      <div class="hero-bottom container">
+        <span data-i18n="hero_location">Basé au Bénin · Ouvert aux collaborations</span>
+        <a href="#about" aria-label="Défiler vers la section à propos">↓</a>
+      </div>
+    </section>
+
+    <section class="intro section" id="about">
+      <div class="container two-column">
+        <div>
+          <p class="section-kicker" data-i18n="about_kicker">01 / À PROPOS</p>
+          <h2 data-i18n="about_title">Des mathématiques aux décisions concrètes.</h2>
+        </div>
+        <div class="section-copy">
+          <p data-i18n="about_text">Diplômé d'un Master en recherche opérationnelle à l'Institut de Mathématiques et de Sciences Physiques (IMSP, Bénin), je m'intéresse à la manière dont les modèles mathématiques, les méthodes d'optimisation et les approches fondées sur l'intelligence artificielle peuvent aider à résoudre des problèmes réels.</p>
+          <p data-i18n="about_text2">Mon objectif est de développer une expertise en optimisation et en aide à la décision, avec une attention particulière portée aux applications scientifiques, industrielles et aux enjeux de développement en Afrique de l'Ouest.</p>
+          <a class="text-link" href="#education" data-i18n="about_link">Voir mon parcours académique ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="section-kicker" data-i18n="projects_kicker">02 / TRAVAUX</p><h2 data-i18n="projects_title">Projets & réalisations</h2></div>
+          <p data-i18n="projects_intro">Quelques travaux qui illustrent mon approche : formuler, modéliser, optimiser et analyser.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card project-featured">
+            <div class="project-art art-chip"><div class="chip-lines"></div><span>AMS</span><small>COMPONENT PLACEMENT</small></div>
+            <div class="project-content">
+              <div class="project-meta"><span data-i18n="project_thesis_type">MÉMOIRE DE MASTER</span><span>01</span></div>
+              <h3 data-i18n="project1_title">Optimisation du placement de composants de circuits intégrés analogiques et mixtes</h3>
+              <p data-i18n="project1_desc">Étude d'une approche hybride associant la Recherche à Voisinage Variable (VNS) et la programmation mathématique avec CPLEX pour explorer l'espace des placements sous contraintes spécifiques aux circuits AMS.</p>
+              <div class="tag-list"><span>VNS</span><span>CPLEX</span><span>Combinatorial Optimization</span></div>
+              <p class="project-note" data-i18n="project1_note">Travail de recherche réalisé dans le cadre du Master.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-art art-mine"><div class="mine-grid"></div><span>SCENARIOS</span><small>STOCHASTIC OPTIMIZATION</small></div>
+            <div class="project-content">
+              <div class="project-meta"><span data-i18n="project_working">PISTE DE MODÉLISATION</span><span>02</span></div>
+              <h3 data-i18n="project2_title">Prise en compte de l'incertitude géologique dans la planification du forage</h3>
+              <p data-i18n="project2_desc">Réflexion sur une modélisation par scénarios des caractéristiques des roches et leur influence sur les coûts de forage et les paramètres de conception des trous de mine.</p>
+              <div class="tag-list"><span>Stochastic Optimization</span><span>Scenario-based Modeling</span></div>
+              <p class="project-note" data-i18n="project2_note">Sujet en cours d'exploration et de formalisation.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-art art-simulation"><div class="sim-path"><i></i><i></i><i></i><i></i></div><span>FLOW SYSTEMS</span><small>DISCRETE-EVENT SIMULATION</small></div>
+            <div class="project-content">
+              <div class="project-meta"><span data-i18n="project_academic">MODÉLISATION & SIMULATION</span><span>03</span></div>
+              <h3 data-i18n="project3_title">Simulation de systèmes de files d'attente avec AnyLogic</h3>
+              <p data-i18n="project3_desc">Modélisation de flux de clients et de mécanismes de service dans un système bancaire, avec une approche de simulation à événements discrets.</p>
+              <div class="tag-list"><span>AnyLogic</span><span>Discrete-Event Simulation</span></div>
+              <p class="project-note" data-i18n="project3_note">Travaux de modélisation et d'apprentissage.</p>
+            </div>
+          </article>
+        </div>
+        <p class="small-note" data-i18n="projects_disclaimer">Les descriptions seront enrichies avec les rapports, résultats, captures et dépôts de code disponibles.</p>
+
+        <div class="simulation-gallery" id="simulations">
+          <div class="gallery-heading">
+            <div><p class="section-kicker" data-i18n="gallery_kicker">VISUALISATIONS</p><h3 data-i18n="gallery_title">Aperçu de mes simulations</h3></div>
+            <p data-i18n="gallery_intro">Les captures d'écran des modèles seront présentées ici pour montrer leur structure, leur fonctionnement et les résultats observés.</p>
+          </div>
+          <div class="gallery-grid">
+            <figure class="gallery-item">
+              <div class="simulation-card">
+                <img
+                    src="assets/simulations/ChaineLogistique.png"
+                    alt="Simulation d'un système bancaire"
+                    loading="lazy"
+                >
+            </div>
+              <figcaption><strong data-i18n="gallery_bank">Simulation d'un système logistique</strong><span data-i18n="gallery_bank_desc">Livraison des produits allant d'un entrepôt aux clients</span></figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <div class="simulation-card">
+                <img
+                    src="assets/simulations/SimulationprocessUsine.png"
+                    alt="Simulation d'un système bancaire"
+                    loading="lazy"
+                >
+            </div>
+              <figcaption><strong data-i18n="gallery_warehouse">Simulation d'une usine</strong><span data-i18n="gallery_warehouse_desc">Représentation des opérations de stockage, d'attente et de récupération.</span></figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <div class="simulation-card">
+                <img
+                    src="assets/simulations/ConceptionTirMinesConver.png"
+                    alt="Simulation d'un système bancaire"
+                    loading="lazy"
+                >
+            </div>
+              <figcaption><strong data-i18n="gallery_other">Optimisation conception de tir mines par CVar</strong><span data-i18n="gallery_other_desc">Un emplacement supplémentaire pour une autre réalisation que tu souhaites présenter.</span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="research">
+      <div class="container">
+        <p class="section-kicker" data-i18n="research_kicker">03 / EXPLORATION SCIENTIFIQUE</p>
+        <div class="section-heading">
+          <h2 data-i18n="research_title">Centres d'intérêt & axes de recherche</h2>
+          <p data-i18n="research_intro">Des méthodes quantitatives pour mieux comprendre les systèmes et éclairer les décisions.</p>
+        </div>
+        <div class="interest-grid">
+          <article class="interest-card"><span class="interest-number">01</span><div class="interest-icon">⌘</div><h3 data-i18n="interest1">Optimisation mathématique</h3><p data-i18n="interest1_desc">Programmation mathématique, optimisation combinatoire, stochastique et non linéaire.</p></article>
+          <article class="interest-card"><span class="interest-number">02</span><div class="interest-icon">◈</div><h3 data-i18n="interest2">Intelligence artificielle</h3><p data-i18n="interest2_desc">Apprentissage automatique et approches hybrides combinant IA et optimisation.</p></article>
+          <article class="interest-card"><span class="interest-number">03</span><div class="interest-icon">⇄</div><h3 data-i18n="interest3">Théorie des jeux</h3><p data-i18n="interest3_desc">Décisions stratégiques, interactions entre acteurs et intérêts divergents.</p></article>
+          <article class="interest-card"><span class="interest-number">04</span><div class="interest-icon">∿</div><h3 data-i18n="interest4">Contrôle optimal</h3><p data-i18n="interest4_desc">Pilotage de systèmes dynamiques et optimisation de trajectoires et de décisions.</p></article>
+          <article class="interest-card"><span class="interest-number">05</span><div class="interest-icon">▦</div><h3 data-i18n="interest5">Modélisation & simulation</h3><p data-i18n="interest5_desc">Représentation et simulation de phénomènes complexes et de systèmes physiques.</p></article>
+          <article class="interest-card"><span class="interest-number">06</span><div class="interest-icon">⌁</div><h3 data-i18n="interest6">Aide multicritère à la décision</h3><p data-i18n="interest6_desc">Évaluation d'alternatives et arbitrage entre plusieurs critères de décision.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark application-section">
+      <div class="container">
+        <p class="section-kicker light-kicker" data-i18n="applications_kicker">04 / APPLICATIONS</p>
+        <div class="section-heading">
+          <h2 data-i18n="applications_title">Des méthodes, plusieurs domaines d'application.</h2>
+          <p data-i18n="applications_intro">La recherche opérationnelle et l'IA peuvent contribuer à des décisions plus robustes dans de nombreux secteurs.</p>
+        </div>
+        <div class="application-grid">
+          <div><span>01</span><b data-i18n="app1">Santé publique & épidémiologie</b></div>
+          <div><span>02</span><b data-i18n="app2">Économie & finance</b></div>
+          <div><span>03</span><b data-i18n="app3">Défense & sécurité</b></div>
+          <div><span>04</span><b data-i18n="app4">Gouvernance & politiques publiques</b></div>
+          <div><span>05</span><b data-i18n="app5">Ressources naturelles & environnement</b></div>
+          <div><span>06</span><b data-i18n="app6">Énergie & infrastructures</b></div>
+          <div><span>07</span><b data-i18n="app7">Agriculture & sécurité alimentaire</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="skills">
+      <div class="container two-column">
+        <div><p class="section-kicker" data-i18n="skills_kicker">05 / SAVOIR-FAIRE</p><h2 data-i18n="skills_title">Outils & compétences</h2><p class="muted" data-i18n="skills_intro">Une base en modélisation mathématique, complétée par des outils de programmation et de simulation.</p></div>
+        <div class="skills-panel">
+          <div class="skill-group"><h3 data-i18n="skills_math">Méthodes mathématiques</h3><div class="tag-list"><span>Linear Optimization</span><span>Combinatorial Optimization</span><span>Stochastic Optimization</span><span>Graph Theory</span><span>Multi-criteria Decision Analysis</span></div></div>
+          <div class="skill-group"><h3 data-i18n="skills_programming">Programmation</h3><div class="tag-list"><span>Python · Intermediate</span><span>C++</span><span>LaTeX</span></div></div>
+          <div class="skill-group"><h3 data-i18n="skills_tools">Solveurs & logiciels</h3><div class="tag-list"><span>IBM ILOG CPLEX</span><span>Gurobi · Familiarity</span><span>AnyLogic</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="container two-column">
+        <div><p class="section-kicker" data-i18n="education_kicker">06 / PARCOURS</p><h2 data-i18n="education_title">Formation académique</h2></div>
+        <div class="timeline">
+          <article><span class="timeline-dot"></span><p class="timeline-date">MASTER</p><h3 data-i18n="education_master">Master en recherche opérationnelle</h3><p>Institut de Mathématiques et de Sciences Physiques (IMSP), Bénin</p><p class="muted" data-i18n="education_master_desc">Spécialisation en modélisation, optimisation et aide à la décision. Mémoire consacré au placement de composants de circuits AMS.</p></article>
+          <article><span class="timeline-dot"></span><p class="timeline-date">LICENCE</p><h3 data-i18n="education_bachelor">Licence en mathématiques</h3><p>Formation universitaire en mathématiques</p><p class="muted" data-i18n="education_bachelor_desc">Fondements mathématiques et préparation aux études avancées en recherche opérationnelle.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section section-dark" id="contact">
+      <div class="container contact-inner">
+        <p class="section-kicker light-kicker" data-i18n="contact_kicker">07 / ÉCHANGEONS</p>
+        <h2 data-i18n="contact_title">Une idée, un projet de recherche ou une collaboration ?</h2>
+        <p data-i18n="contact_text">Je suis ouvert aux échanges autour de la recherche opérationnelle, de l'optimisation, de l'IA et de leurs applications.</p>
+        <a class="button button-primary" href="mailto:YOUR_EMAIL@example.com" data-i18n="contact_button">Me contacter <span>↗</span></a>
+        <p class="contact-placeholder" data-i18n="contact_placeholder">À personnaliser : adresse e-mail, profil LinkedIn et GitHub.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner"><a class="brand" href="#home">BD<span>.</span></a><p>© <span id="year"></span> Bonaventure Danfi. <span data-i18n="footer_text">Tous droits réservés.</span></p><a href="#home" data-i18n="back_top">Retour en haut ↑</a></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
